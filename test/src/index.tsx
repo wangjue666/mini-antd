@@ -6,7 +6,10 @@ import reportWebVitals from './reportWebVitals';
 import "antd-mobile/dist/antd-mobile.css"
 import alert from "./Components/alert/Alert"
 import operation from "./Components/alert/Operation"
-operation([{text:"标为未读"}, {text: '置顶聊天'}])
+import prompt from "./Components/alert/Prompt"
+import { title } from 'process';
+//operation([{text:"标为未读"}, {text: '置顶聊天'}])
+prompt('test', 'hello')
 
 // ReactDOM.render(
 //   <React.StrictMode>
