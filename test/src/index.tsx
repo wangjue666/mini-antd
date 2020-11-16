@@ -5,8 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "antd-mobile/dist/antd-mobile.css"
 import alert from "./Components/alert/Alert"
-
-alert('hello', 'hello alrte')
+import operation from "./Components/alert/Operation"
+operation([{text:"标为未读"}, {text: '置顶聊天'}])
 
 // ReactDOM.render(
 //   <React.StrictMode>
