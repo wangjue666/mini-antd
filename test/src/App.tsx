@@ -1,8 +1,11 @@
 import React from 'react';
+import Button, {ButtonType,ButtonSize} from "./Components/button/Button"
 function App() {
   return (
     <div className="App">
-      123
+      <Button disabled={true}>123</Button>
+      <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>123</Button>
+      <Button btnType={ButtonType.Link} href="www.baidu.com">123</Button>
     </div>
   );
 }
