@@ -10,11 +10,11 @@ function App() {
       <Button  btnType={ButtonType.Link} href="www.baidu.com">123</Button>
       <Button autoFocus>hello disal</Button>
 
-      <Menu onSelect={(index)=>alert(index)} defaultIndex={1}>
+      <Menu onSelect={(index)=>console.log(index)} defaultIndex={0}>
         <MenuItem index={0}>
           Link 0
         </MenuItem>
-        <MenuItem index={1} disabled>
+        <MenuItem disabled index={1}>
           Link 1
         </MenuItem>
         <MenuItem index={2}>
