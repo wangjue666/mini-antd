@@ -14,8 +14,9 @@ export interface MenuProps {
 }
 
 interface IMenuContext {
-    index: number,
+    index: number
     onSelect?: SelectCallBack
+    mode?: MenuMode
 }
 
 export const MenuContext = createContext<IMenuContext>({index: 0})
@@ -33,7 +34,8 @@ const Menu: React.FC<MenuProps> = (props) =>{
     }
     const passedContext:IMenuContext = {
         index: currentActive || 0,
-        onSelect: handleClick
+        onSelect: handleClick,
+        mode
     }
     const renderChildren = ()=> {
         return React.Children.map(children, (child, index)=>{
