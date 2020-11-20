@@ -11,25 +11,25 @@ function App() {
       <Button autoFocus>hello disal</Button>
 
       <Menu onSelect={(index)=>console.log(index)} defaultIndex={0}>
-        <MenuItem index={0}>
+        <MenuItem>
           Link 0
         </MenuItem>
-        <MenuItem disabled index={1}>
+        <MenuItem disabled>
           Link 1
         </MenuItem>
-        <MenuItem index={2}>
+        <MenuItem>
           Link 2
         </MenuItem>
       </Menu>
 
       <Menu mode="vertical" onSelect={(index)=>console.log(index)} defaultIndex={0}>
-        <MenuItem index={0}>
+        <MenuItem>
           Link 0
         </MenuItem>
-        <MenuItem disabled index={1}>
+        <MenuItem disabled>
           Link 1
         </MenuItem>
-        <MenuItem index={2}>
+        <MenuItem>
           Link 2
         </MenuItem>
       </Menu>
