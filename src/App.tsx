@@ -3,9 +3,11 @@ import Button, { ButtonType, ButtonSize } from "./Components/button/Button"
 import Menu from "./Components/menu/Menu"
 import MenuItem from "./Components/menu/MenuItem"
 import SubMenu from "./Components/menu/SubMenu"
+import Icon from "./Components/icon/Icon"
 function App() {
   return (
     <div className="App">
+      <Icon theme="danger" size="lg" icon="coffee"></Icon>
       <Menu defaultOpenSubMenus={['3']} mode="vertical" onSelect={(index) => console.log(index)} defaultIndex={'0'}>
         <MenuItem>
           Link 0
