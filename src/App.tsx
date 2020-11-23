@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Icon theme="danger" size="lg" icon="coffee"></Icon>
       <Icon theme="primary" size="lg" icon="arrow-down"></Icon>
-      <Menu mode="vertical" defaultOpenSubMenus={['3']}  onSelect={(index) => console.log(index)} defaultIndex={'0'}>
+      <Menu  defaultOpenSubMenus={['3']}  onSelect={(index) => console.log(index)} defaultIndex={'0'}>
         <MenuItem>
           Link 0
         </MenuItem>
