@@ -13,7 +13,7 @@ export interface InputProps extends Omit<InputHTMLAttributes<HTMLElement>, 'size
     append?: string | ReactElement
 }
 
-export const Input: FC<InputProps> = (props) =>{
+const Input: FC<InputProps> = (props) =>{
     const {
         disabled,
         size,
@@ -53,3 +53,6 @@ export const Input: FC<InputProps> = (props) =>{
         </div>
       )
 }
+
+
+export default  Input
